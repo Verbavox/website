@@ -8,6 +8,7 @@ export async function POST(req) {
   const openai = new OpenAI({
     apiKey: process.env.OPENAI_API_KEY
   })
+
   
   const response = await openai.chat.completions.create({
     model: "gpt-3.5-turbo",
@@ -22,7 +23,7 @@ export async function POST(req) {
       }
     ],
     temperature: 0,
-    max_tokens: 20,
+    max_tokens: 1,
     top_p: 1,
     frequency_penalty: 0,
     presence_penalty: 0,
