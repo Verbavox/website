@@ -3,7 +3,7 @@ import React from 'react'
 
 export default function App() {
 //   const [paragraphShow, setParagraphShow] = useState('')
-    const q = encodeURIComponent('set an alarm for 2pm');
+    const q = encodeURIComponent('Write a paragraph about the said topic');
     const uri = 'https://api.wit.ai/message?v=20230215&q=' + q;
     const auth = 'Bearer ' + "2WKEDP5KRDDYSIKMVSTXY36VYZO2QBHW";
     
