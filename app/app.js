@@ -9,15 +9,19 @@ export default function App() {
         "flex items-center justify-center",
         "min-h-screen",
         "gap-6"
-    )}>
+    )} >
         <h1 className={clsx(
             "text-6xl font-bold",
             "tracking-widest",
         )}>VERBOVOX</h1>
-        <Image 
+        <Image
+            className={clsx(
+                "rounded-full"
+            )}
             width={60} 
             height={60} 
-            src={'/verbavoxLogoBlackAndWhite.png'} />
+            src={'/verbavoxLogoBlackAndWhite.png'} 
+            draggable="false"/>
     </main>
   )
 }
