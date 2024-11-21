@@ -1,7 +1,5 @@
 'use client'
 import clsx from 'clsx'
-import Image from 'next/image'
-import Logo from "@/public/verbavoxLogoBlackAndWhite.png";
 import React, { useState } from 'react'
 
 export default function App() {
@@ -19,15 +17,6 @@ export default function App() {
             "text-6xl font-bold",
             "tracking-widest",
         )}>VERBAVOX</h1>
-        <Image
-            id='verbavox-logo'
-            className={clsx(
-                "rounded-full",
-            )}
-            width={60} 
-            height={60} 
-            src={Logo} 
-            draggable="false"/>
     </main>
   )
 }
